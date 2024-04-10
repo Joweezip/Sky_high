@@ -1,5 +1,6 @@
 import Header from './header'
 import VideoOne from './VideoOne'
+import VideoTwo from './VideoTwo'
 import './App.css'
 
 function App() {
@@ -7,7 +8,7 @@ return(
   <>
   <VideoOne></VideoOne>
   <Header></Header>
-  <h1></h1>
+  <VideoTwo></VideoTwo>
   </>
 )
 }
