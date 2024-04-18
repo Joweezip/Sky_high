@@ -6,9 +6,9 @@ import './App.css'
 function App() {
 return(
   <>
-  <VideoOne></VideoOne>
-  <Header></Header>
+  <VideoOne ></VideoOne>
   <VideoTwo></VideoTwo>
+  <Header></Header>
   </>
 )
 }
