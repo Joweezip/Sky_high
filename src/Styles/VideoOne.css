@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: auto;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+.video{
+ position: relative;
+  width: 100vw;
+}
+
+.Title{
+    position: absolute;
+    top: 50%; /* Position the title vertically centered */
+    left: 50%; /* Position the title horizontally centered */
+    transform: translate(-50%, -50%); /* Center the title */
+    z-index: 1; /* Ensure the title is above the video */
+    color: white; /* Set title color */
+    font-size: 3em; /* Set title font size */
+    text-align: center; /* Center-align the text */
+}
+
+.SubTitle{
+    position: absolute;
+    top: 55%; /* Position the title vertically centered */
+    left: 50%; /* Position the title horizontally centered */
+    transform: translate(-50%, -50%); /* Center the title */
+    z-index: 1; /* Ensure the title is above the video */
+    color: white; /* Set title color */
+    font-size: 1.5em; /* Set title font size */
+    text-align: center; /* Center-align the text */
+}
+.RedirectButtonWrapper {
+    position: absolute;
+  top: calc(55% + 70px); /* Adjust the distance from the Drone Filming CO subtitle */
+  left: 50%; /* Position the button horizontally centered */
+  transform: translateX(-50%); /* Center the button */
+  z-index: 1; /* Ensure the button is above the video */
+  }
+
+
+  
