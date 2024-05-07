@@ -4,8 +4,12 @@ import '../Styles/TorontoCity.css'
 export default function Toronto() {
   return (
     <>
-      <h1 className="Title">Toronto City</h1>
-      <p>
+       <div className="BlankBox">
+       <h1 className="Title">Toronto City</h1>
+       </div>
+     
+     <div className="SecBlankBox">
+     <p>
         Welcome to Toronto! This vibrant city boasts diverse neighborhoods, from
         the historic charm of the Distillery District to the eclectic energy of
         Kensington Market. Dont miss iconic sights like the CN Tower and the
@@ -13,6 +17,8 @@ export default function Toronto() {
         Chinatown and Little Italy. With its mix of culture, cuisine, and
         landmarks, Toronto offers an unforgettable experience for every visitor.
       </p>
+     </div>
+      
       <img className= "Image1" src="src\assets\toront_img1.jpeg" />
       <img src="src\assets\Toronto_img2.jpeg" alt="" className="Image2" />
 
