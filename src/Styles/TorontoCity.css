@@ -1,28 +1,8 @@
 body{
-  background: linear-gradient(#85160c, #832a01);
-}
-.BlankBox{
-  position: relative;
-  
-  width: 450px;
-  background-color: aliceblue;
-  
-
-}
-.SecBlankBox{
-  background-color: aliceblue;
-  width: 450px;
-}
-.Title{
-  font-size: 80px;
+  background-color: papayawhip;
 }
 
-p{
-  font-size: 20px;
-}
-.Image1{
-  width: 200px;
-}
+
 .Image2{
-  width: 200px;
-}
+  width: 300px;
+}       
