@@ -13,7 +13,7 @@ body{
 
 .Title3{
     position: absolute;
-    top: 295%; /* Position the title vertically centered */
+    top: 270%; /* Position the title vertically centered */
     left: 50%; /* Position the title horizontally centered */
     transform: translate(-50%, -50%); /* Center the title */
     z-index: 1; /* Ensure the title is above the video */
@@ -23,7 +23,7 @@ body{
 }
 .SubTitle3{
     position: absolute;
-    top: 300%; /* Position the title vertically centered */
+    top: 275%; /* Position the title vertically centered */
     left: 50%; /* Position the title horizontally centered */
     transform: translate(-50%, -50%); /* Center the title */
     z-index: 1; /* Ensure the title is above the video */
@@ -34,11 +34,15 @@ body{
 
 .RedirectButtonWrapper3{
   position: absolute;
-  top: calc(300% + 70px); /* Adjust the distance from the Drone Filming CO subtitle */
+  top: calc(275% + 70px); /* Adjust the distance from the Drone Filming CO subtitle */
   left: 50%; /* Position the button horizontally centered */
   transform: translateX(-50%); /* Center the button */
   z-index: 1; /* Ensure the button is above the video */
   }
 
+  .RedirectButtonWrapper3 :hover{
+    background-color: rgba(0, 0, 0, 0.568);
+    }
+  
 
   

@@ -39,6 +39,8 @@ body{
   transform: translateX(-50%); /* Center the button */
   z-index: 1; /* Ensure the button is above the video */
   }
-
+  .RedirectButtonWrapper2 :hover{
+    background-color: rgba(0, 0, 0, 0.568);
+    }
 
   
