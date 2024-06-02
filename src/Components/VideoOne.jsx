@@ -1,17 +1,20 @@
-
-import RedirectButton from "./button"
-import "../Styles/VideoOne.css"
-export default function VideoOne(){
-    return(
-        <>
-         <video src="src\assets\toronto_drone.mp4" autoPlay muted loop className="video"></video>
-        <h1 className="Title">Toronto City</h1>
-          <h5 className="SubTitle">Drone Filiming CO</h5>
-         <div className="RedirectButtonWrapper">
+import RedirectButton from "./button";
+import "../Styles/VideoOne.css";
+export default function VideoOne() {
+  return (
+    <>
+      <video
+        src="src\assets\toronto_drone.mp4"
+        autoPlay
+        muted
+        loop
+        className="video"
+      ></video>
+      <h1 className="Title">Toronto City</h1>
+      <h5 className="SubTitle">Drone Filiming CO</h5>
+      <div className="RedirectButtonWrapper">
         <RedirectButton link="Toronto.html"></RedirectButton>
-         </div>
-        
-        </>
-       
-    )
+      </div>
+    </>
+  );
 }
