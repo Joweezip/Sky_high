@@ -13,7 +13,7 @@ export default function VideoThree() {
       <h1 className="Title3">New York City</h1>
       <h5 className="SubTitle3">Drone Filiming CO</h5>
       <div className="RedirectButtonWrapper3">
-        <RedirectButton></RedirectButton>
+        <RedirectButton link="https://www.nyc.gov/"></RedirectButton>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export default function VideoTwo() {
       <h1 className="Title2">Seattle City</h1>
       <h5 className="SubTitle2">Drone Filiming CO</h5>
       <div className="RedirectButtonWrapper2">
-        <RedirectButton link="/"></RedirectButton>
+        <RedirectButton link="https://www.seattle.gov/"></RedirectButton>
       </div>
     </div>
   );

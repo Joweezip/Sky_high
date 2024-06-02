@@ -13,7 +13,7 @@ export default function VideoOne() {
       <h1 className="Title">Toronto City</h1>
       <h5 className="SubTitle">Drone Filiming CO</h5>
       <div className="RedirectButtonWrapper">
-        <RedirectButton link="Toronto.html"></RedirectButton>
+        <RedirectButton link="https://www.toronto.ca/"></RedirectButton>
       </div>
     </>
   );
