@@ -1,0 +1,54 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contact-card {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contact-card-header {
+  padding: 20px;
+}
+
+.contact-card-body {
+  padding: 20px;
+}
+
+.contact-card-body input,
+.contact-card-body textarea {
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contact-card-body textarea {
+  resize: vertical;
+}
+.contact-card-body button {
+  background-color: black;
+  border-radius: 7px;
+  border: black;
+  color: #ffffff;
+  height: 40px;
+  width: 78px;
+  margin-right: -20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contact-card-footer {
+  padding: 20px;
+  text-align: right;
+}

@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -28,11 +29,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem; /* Add padding to prevent content from touching the edges on small screens */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center; /* Center text for better readability on small screens */
 }
 
 button {
@@ -46,9 +51,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,10 +66,68 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  button {
+    font-size: 0.85em;
+    padding: 0.5em 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    font-size: 0.8em;
+    padding: 0.4em 0.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  button {
+    font-size: 0.75em;
+    padding: 0.4em 0.7em;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 0.7em;
+    padding: 0.3em 0.6em;
   }
 }

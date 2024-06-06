@@ -1,48 +1,67 @@
-body{
-    margin: 0;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y:auto;
-    
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
-.video{
- position: relative;
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Courier New", Courier, monospace;
+
+}
+
+/* Style the video elements to be full width */
+.video {
+  position: relative;
   width: 100vw;
+  height: 100vh; /* Ensure video takes full viewport height */
+  object-fit: cover; /* Ensure video covers the entire element */
   margin-top: -10px;
 }
 
-.Title3{
-    position: absolute;
-    top: 270%; /* Position the title vertically centered */
-    left: 50%; /* Position the title horizontally centered */
-    transform: translate(-50%, -50%); /* Center the title */
-    z-index: 1; /* Ensure the title is above the video */
-    color: white; /* Set title color */
-    font-size: 3em; /* Set title font size */
-    text-align: center; /* Center-align the text */
-}
-.SubTitle3{
-    position: absolute;
-    top: 275%; /* Position the title vertically centered */
-    left: 50%; /* Position the title horizontally centered */
-    transform: translate(-50%, -50%); /* Center the title */
-    z-index: 1; /* Ensure the title is above the video */
-    color: white; /* Set title color */
-    font-size: 1.5em; /* Set title font size */
-    text-align: center; /* Center-align the text */
+/* Title3 styling */
+.Title3 {
+  position: absolute;
+  top: 245%; /* Position the title vertically centered */
+  left: 50%; /* Position the title horizontally centered */
+  transform: translate(-50%, -50%); /* Center the title */
+  z-index: 1; /* Ensure the title is above the video */
+  color: white; /* Set title color */
+  font-size: 3rem; /* Set title font size */
+  text-align: center; /* Center-align the text */
+  padding: 0 20px; /* Add some padding for small screens */
 }
 
-.RedirectButtonWrapper3{
+/* SubTitle3 styling */
+.SubTitle3 {
   position: absolute;
-  top: calc(275% + 70px); /* Adjust the distance from the Drone Filming CO subtitle */
+  top: calc(245% + 45px); /* Position the subtitle below the title */
+  left: 50%; /* Position the subtitle horizontally centered */
+  transform: translate(-50%, -50%); /* Center the subtitle */
+  z-index: 1; /* Ensure the subtitle is above the video */
+  color: white; /* Set subtitle color */
+  font-size: 1rem; /* Set subtitle font size */
+  text-align: center; /* Center-align the text */
+  padding: 0 20px; /* Add some padding for small screens */
+}
+
+/* Button wrapper styling */
+.RedirectButtonWrapper3 {
+  position: absolute;
+  top: calc(245% + 75px); /* Position the button below the subtitle */
   left: 50%; /* Position the button horizontally centered */
   transform: translateX(-50%); /* Center the button */
   z-index: 1; /* Ensure the button is above the video */
-  }
+}
 
-  .RedirectButtonWrapper3 :hover{
-    background-color: rgba(0, 0, 0, 0.568);
-    }
-  
+.RedirectButtonWrapper3:hover {
+  background-color: rgba(0, 0, 0, 0.568);
+}
 
-  
+/* Responsive design for various screen sizes */
+
+/* No media queries required as elements adapt automatically */

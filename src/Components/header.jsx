@@ -12,13 +12,10 @@ export default function Header() {
           <a href="/">HOME</a>
         </li>
         <li className="nav_list">
-          <a href="/">PROJECTS</a>
+          <a href="index2.html">CONTACT</a>
         </li>
         <li className="nav_list">
-          <a href="/">CONTACT</a>
-        </li>
-        <li className="nav_list">
-          <a href="/">ABOUT US</a>
+          <a href="about.html">ABOUT </a>
         </li>
       </ul>
     </nav>

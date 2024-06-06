@@ -1,13 +1,14 @@
-.button{
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 30px;
-    font-size: 1em;
+.button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: 1em;
+  text-decoration: none;
 }
 
-.button:hover{
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 30px;
-    font-size: 1em;
+.button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: 1em;
 }

@@ -1,46 +1,72 @@
-body{
-    margin: 0;
-    padding: auto;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y:auto;
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
 }
 
-.video{
- position: relative;
+.video {
+  position: relative;
   width: 100vw;
+  height: 100vh;
+  margin-top: -10px;
+  object-fit: cover; /* Ensure video covers the entire element */
 }
 
-.Title{
-    position: absolute;
-    top: 50%; /* Position the title vertically centered */
-    left: 50%; /* Position the title horizontally centered */
-    transform: translate(-50%, -50%); /* Center the title */
-    z-index: 1; /* Ensure the title is above the video */
-    color: white; /* Set title color */
-    font-size: 3em; /* Set title font size */
-    text-align: center; /* Center-align the text */
-}
-
-.SubTitle{
-    position: absolute;
-    top: 55%; /* Position the title vertically centered */
-    left: 50%; /* Position the title horizontally centered */
-    transform: translate(-50%, -50%); /* Center the title */
-    z-index: 1; /* Ensure the title is above the video */
-    color: white; /* Set title color */
-    font-size: 1.5em; /* Set title font size */
-    text-align: center; /* Center-align the text */
-}
+.Title,
+.SubTitle,
 .RedirectButtonWrapper {
-    position: absolute;
-  top: calc(55% + 70px); /* Adjust the distance from the Drone Filming CO subtitle */
-  left: 50%; /* Position the button horizontally centered */
-  transform: translateX(-50%); /* Center the button */
-  z-index: 1; /* Ensure the button is above the video */
-  }
-  .RedirectButtonWrapper :hover{
-    background-color: rgba(0, 0, 0, 0.568);
-    }
+  position: absolute;
+  left: 50%; /* Position elements horizontally centered */
+  transform: translateX(-50%); /* Center the elements */
+  z-index: 1; /* Ensure the elements are above the video */
+  font-family: "Courier New", Courier, monospace;
 
-  
+}
+
+.Title {
+  top: 50%; /* Position the title vertically centered */
+  color: white; /* Set title color */
+  font-size: 3em; /* Set title font size */
+  text-align: center; /* Center-align the text */
+}
+
+.SubTitle {
+  top: calc(50% + 45px); /* Position the subtitle below the title */
+  color: white; /* Set subtitle color */
+  font-size: 1.5em; /* Set subtitle font size */
+  text-align: center; /* Center-align the text */
+}
+
+.RedirectButtonWrapper {
+  top: calc(50% + 75px); /* Position the button below the subtitle */
+  background-color: transparent; /* Set initial button background color */
+  transition: background-color 0.3s; /* Add transition effect for hover */
+}
+
+.RedirectButtonWrapper:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.568
+  ); /* Change button background color on hover */
+}
+
+/* Responsive design for various screen sizes */
+
+/* Adjust font sizes and positions for smaller screens */
+.Title {
+  font-size: 2em;
+  top: calc(40% + -20px);
+}
+
+.SubTitle {
+  font-size: 1em;
+  top: calc(40% + 25px);
+}
+
+.RedirectButtonWrapper {
+  top: calc(40% + 70px);
+}

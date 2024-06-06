@@ -10,7 +10,7 @@ export default function VideoThree() {
         loop
         className="video"
       ></video>
-      <h1 className="Title3">New York City</h1>
+      <h1 className="Title3">NYC</h1>
       <h5 className="SubTitle3">Drone Filiming CO</h5>
       <div className="RedirectButtonWrapper3">
         <RedirectButton link="https://www.nyc.gov/"></RedirectButton>

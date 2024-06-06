@@ -1,51 +1,120 @@
-body{
-    margin: 0;
-}
-.nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    height: 100px;
-   width: 100vw;
-   align-items: center;
-   justify-content: flex-end;
-    background-color: transparent;
-  margin-top: 0px;
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
 
 }
-.nav_item{
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    margin-right: 20px;
+
+/* Navigation bar styling */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+  margin-top: 0;
+  padding: 0 20px; /* Add padding for spacing */
+  box-sizing: border-box;
+  z-index: 1000; /* Ensure the nav bar stays on top */
 }
 
-.nav_list{
-   display: flex;
-   align-items: center;
-   font-family: sans-serif;
-   font-size: 13px;
-}
-.nav_list a{
-    padding: 10px;
-    color: rgba(240, 248, 255, 0.84);
-}
-.nav_list a:hover{
-    color: rgb(241, 48, 5);
-}
-.Logo_container{
-    list-style: none;
-    margin-right: auto;
+/* Navigation items container */
+.nav_item {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 20px;
 }
 
-.Logo_container a{
-    font-size: 30px;
-   text-decoration: none;
-   color: rgba(240, 248, 255, 0.829);
-}
- 
-.Logo_container a:hover{
-   color: rgb(247, 84, 2);
+/* Navigation list styling */
+.nav_list {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 13px;
 }
 
+.nav_list a {
+  padding: 10px 20px; /* Add padding for spacing between words */
+  color: rgba(0, 0, 0, 0.84);
+  text-decoration: none; /* Ensure text is not underlined */
+}
+
+.nav_list a:hover {
+  color: rgb(241, 48, 5);
+}
+
+/* Logo container styling */
+.Logo_container {
+  list-style: none;
+  margin-right: auto;
+}
+
+.Logo_container a {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.829);
+}
+
+.Logo_container a:hover {
+  color: rgb(247, 84, 2);
+}
+
+/* Responsive design adjustments */
+
+@media (max-width: 768px) {
+  .nav {
+    height: 80px; /* Further reduce height */
+  }
+
+  .nav_list {
+    font-size: 11px; /* Further reduce font size */
+  }
+
+  .nav_list a {
+    padding: 7px 14px; /* Further adjust padding */
+  }
+
+  .Logo_container a {
+    font-size: 25px; /* Further reduce logo font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav_list a {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    width: 100%; /* Take full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+
+  .Logo_container {
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+
+  .Logo_container a {
+    font-size: 22px; /* Further reduce logo font size */
+  }
+}
+
+@media (max-width: 400px) {
+  .nav_list a {
+    padding: 8px 16px; /* Adjust padding for very small screens */
+    width: 100%; /* Take full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+
+  .nav_list {
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  .nav_item {
+    margin-right: 0; /* Remove margin between items */
+  }
+
+  .Logo_container a {
+    font-size: 18px; /* Further reduce logo font size */
+  }
+}
